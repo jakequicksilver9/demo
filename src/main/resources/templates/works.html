@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>name</th>
+    <th>age</th>
+    </thead>
+    <tbody>
+    <tr th:text="${person.name()}"></tr>
+<!--    <tr th:text="${person.}"></tr>-->
+    </tbody>
+</table>
+</body>
+</html>
