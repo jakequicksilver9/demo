@@ -12,11 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("index")
-    public String index (Model model){
+    @GetMapping("")
+    public String index(Model model) {
         model.addAttribute("person", new Person());
         return "index";
     }
+
+//    @GetMapping("index")
+//    public String index (Model model){
+//        model.addAttribute("person", new Person());
+//        return "index";
+//    }
 
     @PostMapping("submit")
     public String indexPost (@RequestBody Person person, Model model){
